@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sokr</class>
+ <widget class="QMainWindow" name="Sokr">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Формулы</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; font-weight:600;&quot;&gt;Прямая Геодезическая Задача&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Принцип. От известного значения к неизвестному.&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;От точки стояния измеряется дирекционный угол(α) и дальность(Д)&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;К известным координатам Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt; У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt; прибавляются (со своим знаком) приращение координат по формуле:&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;∆ Х= Д *(соs α)  ∆ У= Д *(sin α)&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;2 &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;=∆ Х+ Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt; У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;= У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;+∆ У. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Можно привести к общей формуле:&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;= Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1 &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;+ Д *(соs α) , У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;= У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1 &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;+ Д *(sin α).&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; font-weight:600;&quot;&gt;Обратная геодезическая задача&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Обратная геодезическая задача заключается в том, что по известным координатам двух точек вычисляют горизонтальное положение (длину) линии между этими точками и дирекционный угол этой линии.&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;1)Вычисляют приращение координат. Т.е от второй точки(цель) отнимают координаты первой(огневая позиция)&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;-Х&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;∆ Х, У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;-У&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;=∆ У&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;2)Определяют румб линии.&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/about/formuls/1.jpg&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; color:#000000; background-color:#ffffff;&quot;&gt;3)По знакам приращений координат &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt; color:#000000;&quot;&gt;∆ Х,∆ У определяют четверть, в которой находится румб и определяют дирекционный угол.&lt;/span&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/about/formuls/2.jpg&quot; width=&quot;1000&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;4)Дальность определяется по формуле.&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/about/formuls/3.jpg&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Формулы для огневой задачи&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;1)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;При засечке ПГЗ&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;2)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;При нахождении Дцт ОГЗ &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;3)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;При нахождении доворота до цели. &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;Дирекционный угол цели(αц) &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;– &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;дирекционный угол цели(αц). При нахождении исчисленного интерполируемое значение со своим знаком прибавляется к топографическому.&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;4)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;Прицел. По ТС. Находится ближайшее значение. Находится разница между дальностью и ближайшей дальностью ТС(принятой ближайшей). Разница делится на с и прибавляется со своим знаком(т.е если принятая больше реальной отнимается от принятой, если принятая меньше то прибавляется). В минометных подразделениях Разницу делят на 50 и умножают на ∆П. и по аналогичному признаку&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;5)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;Скачок прицела. При глубине цели более 100м. 1/3Глубины цели/∆Хтыс. В минометных подразделениях. 1/3глубины/50*∆П.&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;6)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;Дальность до цели исчисленная(Дци). Интерполируются значения и прибавляются со своим знаком к Дцт(дальность до цели топографическая)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;7)  &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;Уровень. &lt;/span&gt;&lt;img src=&quot;:/about/formuls/4.jpg&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;8)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Ку. Коэффициент удаления. Дк(дальность командира т.е дальность от кнп до цели)/Дцт(Дальность до цели топографическая)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;9)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Шу. Шаг Угломера. ПС(поправка на смещение)/0.01 Дцт. Определяется до 0-01&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;10)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;ПС. Поправка на смещение. В программе выполняются следующие действия.&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Дальность командира ± 30-00&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Альфа цели ±30-00&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Symbol';&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;         &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;Высчитывается разница между этими углами&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;11)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;∆Хтыс,∆П программа выводит используемые значения из тс при нахождении прицела(4)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif';&quot;&gt;12)&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; color:#000000; background-color:#ffffff;&quot;&gt;Iв. Интервал веера. При бронированной и укрытых целях более фронтом более 150м.&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/about/formuls/5.jpg&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

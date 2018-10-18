@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Kratko</class>
+ <widget class="QMainWindow" name="Kratko">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Сокращения</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Расшифровка сокращений&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Поправки:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Д.оп&lt;/span&gt; - Дальность опорная. Используется в поправках при построении графика расчитанных поправок(ГРП). Рассчитывается с помощью бланка расчета поправок(при помощи данных Метеосредний). Внимание данные используются не более 3ч. &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;∆Дсум&lt;/span&gt; - Дельта Дальности суммарная. Отклонение по дальности по сравнению с идеальными условиями. &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;∆∂сум&lt;/span&gt; - Дельта Доворота(направления) суммарное. Тоже самое как и с предедыдущим. Учтите даже для идеальных условий у нарезных орудий присутствует поправка на деривацию&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Огневая задача:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Д&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;т&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt; &lt;/span&gt;- Дальность до цели топографическая. От огневой позиции до цели&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;∂&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000; vertical-align:sub;&quot;&gt;т&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- Доворот до цели.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;α&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000; vertical-align:sub;&quot;&gt;ц &lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Альфа цели. Дирекционный угол от оп до цели.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Пр&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;и &lt;/span&gt;- Прицел  цели исчисленный. Находится по таблицам стрельбы.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Ск &lt;/span&gt;- Скачок прицела. Используется при глубине цели более 100м (групповые цели). Не вводите значение если цель менее 100м.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Пр&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;т &lt;/span&gt;- Прицел цели топографический. Тоже самое только считается по топографической дальности. Введено если вы забудете убрать предыдущие поправки,а стрелять нужно&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Д&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;и&lt;/span&gt;&lt;span style=&quot; vertical-align:sub;&quot;&gt; &lt;/span&gt;- Дальность до цели исчисленная. Дальность с поправками (слагается/вычитается от &lt;span style=&quot; font-style:italic;&quot;&gt;Д&lt;/span&gt;&lt;span style=&quot; font-style:italic; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-style:italic; vertical-align:sub;&quot;&gt;т&lt;/span&gt;)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;∂&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000; vertical-align:super;&quot;&gt;ц&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000; vertical-align:sub;&quot;&gt;и&lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Ур&lt;/span&gt; - Уровень. Поправка вводимая из-за разница высот ОП и цели. В минометных подразделениях вводится по специальным таблицам в прицел.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;К&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;у&lt;/span&gt;&lt;span style=&quot; vertical-align:sub;&quot;&gt; &lt;/span&gt;- Коэффициент удаления. Служит для вывода разрывов (центра группы разрывов) на линию наблюдения. Рассчитывается с точностью до 0,1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Ш&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;у&lt;/span&gt;&lt;span style=&quot; font-style:italic; vertical-align:sub;&quot;&gt; &lt;/span&gt;- Шаг угломера. Служит для удержания разрыва на линии наблюдения при изменении дальности стрельбы. Рассчитывается с точностью 0-01&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;∆П&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; - Дельта прицела(в минометных подразделениях). Изменение установок прицела при изменении дальности на 50м&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;∆Хтыс&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; - Изменение дальности при изменении прицела на 1 тыс. В остальных подразделениях&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;ПС&lt;/span&gt; - Поправка на смещение. Угол между кнп и оп от цели. При более 5-00 при пристрелке цели используется ПРК&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;I&lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; vertical-align:sub;&quot;&gt;в&lt;/span&gt; - Интервал веера. При бронированных(укрытых) целях и фронтом более 150м вводится 2 установки угломера. Не более 300м и глубине 200м.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
